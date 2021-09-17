@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <header class="shortcuts">
+            <a href="#"><img src="img/Menu.png" alt="Menu" onclick="openNav()"></a>
+            <a href="#"><img src="img/Refresh.png" alt="Refresh"></a>
+            <a href="#"><img src="img/Present.png" alt="Presents"></a>
+            <a href="#"><img src="img/Coins.png" alt="Coins"></a>
+            <a href="#"><img src="img/Music.png" alt="Music"></a>
+            <a href="#"><img src="img/Task.png" alt="Tasks"></a>
+            <a href="#"><img src="img/Level.png" alt="Level"></a>
+        </header>
+        <aside class="hidden-menu" id="hidden-menu-id">
+            <div class="categories">
+                <div class="categories__top-flex">
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <div class="categories__link-container-main">
+                                <img class="categories__userpic" src="img/User.png" alt="Profile">
+                                <h4 class="categories__profile_h">Мой профиль</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <div class="categories__link-container">
+                                <img src="img/Menu_aside.png" alt="Menu">
+                                <h4>Меню</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <div class="categories__link-container">
+                                <img src="img/Balances.png" alt="Balances">
+                                <h4>Баланс</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <div class="categories__link-container">
+                                <img src="img/Sale.png" alt="Sale">
+                                <h4>Акции</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="categories__item-special">
+                    <a class="categories__link" href="#">
+                        <div class="categories__link-container">
+                            <img src="img/Support.png" alt="Support">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="list">
+                <h3>Влад</h3>
+                <div class="list__relationship">
+                    <div class="list__relationship-label">
+                        <img src="img/Ringu.png" alt="">
+                    </div>
+                    <img src="img/Bride.png" alt="">
+                    <div class="list__relationship-right">
+                        <h4>Женат на</h4>
+                        <span>Нина Крылова</span>
+                    </div>
+                </div>
+                <ul class="list__options">
+                    <li class="list__options-item"><img src="img/Notifications.png" style="vertical-align: middle"
+                            alt="Alerts">&emsp;События&emsp;<img class="list__badges" src="img/Notification.png"
+                            style="vertical-align: middle" alt=""></li>
+                    <li class="list__options-item"><img src="img/Friends.png" style="vertical-align: middle"
+                            alt="Friends">&emsp;Друзья и гости</li>
+                    <li class="list__options-item"><img src="img/Leagues.png" style="vertical-align: middle"
+                            alt="Leagues">&emsp;Лиги</li>
+                    <li class="list__options-item"><img src="img/Settings.png" style="vertical-align: middle"
+                            alt="Settings">&emsp;Настройки</li>
+                    <li class="list__options-item"></li>
+                    <hr class="list__line">
+                    <li class="list__options-item"><img src="img/Leaders.png" style="vertical-align: middle"
+                            alt="Leadsers">&emsp;Лидеры</li>
+                    <li class="list__options-item"><img src="img/Achievements.png" style="vertical-align: middle"
+                            alt="Achievements">&emsp;Достижения</li>
+                    <li class="list__options-item"><img src="img/Collections.png" style="vertical-align: middle"
+                            alt="Collections">&emsp;Коллекции</li>
+                    <li class="list__options-item"><img src="img/Search.png" style="vertical-align: middle"
+                            alt="Search">&emsp;Поиск по игрокам</li>
+                    <li class="list__options-item"><img src="img/Weddings.png" style="vertical-align: middle"
+                            alt="Weddings">&emsp;Свадьбы&emsp;<img class="list__badges" src="img/Badge.png"
+                            style="vertical-align: middle" alt=""></li>
+                </ul>
+            </div>
+            <div class="button" onclick="closeNav()">
+                <a href="#">
+                    <img src="img/Back_arrow.png" alt="Back">
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        /* Установите ширину боковой навигации до 250 пикселей */
+        function openNav() {
+            document.getElementById("hidden-menu-id").style.width = "400px";
+        }
+
+        /* Установите ширину боковой навигации на 0 */
+        function closeNav() {
+            document.getElementById("hidden-menu-id").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
